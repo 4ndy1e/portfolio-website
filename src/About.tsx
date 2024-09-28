@@ -1,3 +1,9 @@
+import Nav from "./components/Nav";
+
 export default function About() {
-  return <div>hi im andy</div>;
+  return (
+    <div>
+      <Nav />
+    </div>
+  );
 }

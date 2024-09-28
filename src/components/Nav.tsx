@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 
 export default function Nav() {
   return (
@@ -7,40 +8,26 @@ export default function Nav() {
         <img src="4L.png" className="h-[50px] apsect-square max-sm:h-[35px]" />
       </div>
       <div className="h-[45px] justify-start items-center gap-16 flex max-sm:gap-8">
-        <div className="flex-col justify-center items-center">
-          <Link
-            to="/"
-            className={window.location.pathname === "/" ? "active" : ""}
-          >
-            {/* <img
-              className="h-[30px] aspect-square max-sm:h-[25px]"
-              src="work.png"
-              alt="Work"
-            /> */}
-          </Link>
-        </div>
-        <div className="flex-col justify-center items-center">
-          <Link
-            to="/about"
-            className={window.location.pathname === "/about" ? "active" : ""}
-          >
-            <img
-              className="h-[30px] aspect-square max-sm:h-[25px]"
-              src="profile.png"
-              alt="About"
-            />
-          </Link>
-        </div>
-        <div className="flexjustify-center items-center">
-          <a href="https://www.linkedin.com/in/4ndyle/" target="_blank">
-            {/* <img
-              className="h-[30px] aspect-square max-sm:h-[25px]"
-              src="linkedin.png"
-              alt="LinkedIn"
-            /> */}
-          </a>
-        </div>
+        <PageLink text="Experiences" to="/home" />
+        <PageLink text="About" to="/about" />
+        <PageLink text="LinkedIn" to="https://www.linkedin.com/in/4ndyle/" />
       </div>
     </section>
+  );
+}
+
+interface PageLinkProps {
+  text: string;
+  to: string;
+}
+
+function PageLink({ text, to }: PageLinkProps) {
+  return (
+    <div className="flex items-center gap-1 ">
+      <Link to={to}>
+        <p> {text} </p>
+      </Link>
+      <ArrowTopRightIcon className="text-white" />
+    </div>
   );
 }
