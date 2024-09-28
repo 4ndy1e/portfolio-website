@@ -4,64 +4,77 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  width: 100vw;
 }
 
-a {
-  font-weight: 500;
-  color: white;
-  text-decoration: inherit;
-}
-a:hover {
-  text-decoration: underline;
-}
-
+html,
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  box-sizing: border-box;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  @apply text-white text-[75px] font-bold font-['Inter'];
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.asu {
+  font-size: 72px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 198, 39, 1) 0%,
+    rgba(140, 29, 64, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @apply max-lg:text-5xl max-sm:text-4xl max-[480px]:text-3xl;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+h3 {
+  @apply text-[100px] font-bold;
 }
 
-@layer base {
-  :root {
-    --radius: 0.5rem;
-  }
+.skribbleGrad {
+  background: linear-gradient(90deg, #b721ff 0%, #21d4fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card {
+  @apply rounded-[50px] flex flex-col items-center justify-center h-[400px] max-md:h-[250px] max-[550px]:w-[250px];
+}
+
+.card:hover {
+  @apply shadow-2xl;
+}
+
+h4 {
+  @apply font-bold font-['Inter'] text-left pt-4 text-2xl max-md:text-lg;
+}
+
+.projDesc {
+  @apply text-[#B4B4B4] text-left max-md:text-sm;
+}
+
+h5 {
+  @apply font-['Inter'] font-bold text-3xl max-[550px]:text-xl;
+}
+
+.aboutSect {
+  @apply text-2xl font-bold font-['Inter'] text-left;
+}
+
+.aboutDesc {
+  @apply leading-8 text-xl font-normal font-['Inter'] text-left max-md:text-xl max-[570px]:text-sm;
+}
+
+.imgCaption {
+  @apply text-[#b4b4b4] text-sm font-normal font-['Inter'];
+}
+
+.activities {
+  @apply text-2xl font-bold font-['Inter'] text-left max-md:text-xl max-sm:text-lg;
 }

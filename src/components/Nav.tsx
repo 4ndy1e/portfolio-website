@@ -8,7 +8,7 @@ export default function Nav() {
         <img src="4L.png" className="h-[50px] apsect-square max-sm:h-[35px]" />
       </div>
       <div className="h-[45px] justify-start items-center gap-16 flex max-sm:gap-8">
-        <PageLink text="Experiences" to="/home" />
+        <PageLink text="Experiences" to="/" />
         <PageLink text="About" to="/about" />
         <PageLink text="LinkedIn" to="https://www.linkedin.com/in/4ndyle/" />
       </div>
@@ -23,9 +23,9 @@ interface PageLinkProps {
 
 function PageLink({ text, to }: PageLinkProps) {
   return (
-    <div className="flex items-center gap-1 ">
+    <div className="flex items-center gap-1">
       <Link to={to}>
-        <p> {text} </p>
+        <p className="text-white hover:underline"> {text} </p>
       </Link>
       <ArrowTopRightIcon className="text-white" />
     </div>
