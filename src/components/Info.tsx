@@ -32,12 +32,12 @@ function Images() {
   return (
     <div className="flex w-[50%] items-center gap-8 max-md:w-full max-md:mt-24 max-[570px]:px-4">
       <div className="w-3/5 max-lg:w-full ">
-        <img src="snow1.jpg" className="rounded-3xl"></img>
-        <p className="imgCaption m-4"> Snow in Northern Arizona</p>
+        <img src="profile1.jpeg" className="rounded-3xl"></img>
+        <p className="imgCaption m-4"> Fall in Northern Arizona</p>
       </div>
       <div className="flex flex-col gap-8 w-2/5 max-lg:hidden">
-        <img src="snow2.jpg" className="rounded-3xl max-lg:hidden" />
-        <img src="snow3.jpg" className="rounded-3xl max-lg:hidden" />
+        <img src="profile2.jpg" className="rounded-3xl max-lg:hidden" />
+        <img src="profile3.jpeg" className="rounded-3xl max-lg:hidden" />
       </div>
     </div>
   );
