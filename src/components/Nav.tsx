@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import { LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { BriefcaseBusinessIcon, UserIcon, WorkflowIcon } from "lucide-react";
 
 export default function Nav() {
   return (
@@ -11,6 +13,17 @@ export default function Nav() {
         <PageLink text="Experiences" to="/" />
         <PageLink text="About" to="/about" />
         <PageLink text="LinkedIn" to="https://www.linkedin.com/in/4ndyle/" />
+        <div className="h-[45px] justify-start items-center gap-16 flex max-sm:gap-8 sm:hidden">
+          <Link to="/">
+            <BriefcaseBusinessIcon className="text-white" />
+          </Link>
+          <Link to="/about">
+            <UserIcon className="text-white" />
+          </Link>
+          <Link to="https://www.linkedin.com/in/4ndyle/">
+            <LinkedInLogoIcon className="text-white w-6 h-6" />
+          </Link>
+        </div>
       </div>
     </section>
   );
@@ -23,7 +36,7 @@ interface PageLinkProps {
 
 function PageLink({ text, to }: PageLinkProps) {
   return (
-    <div className="flex items-center gap-1">
+    <div className="flex items-center gap-1 max-sm:hidden">
       <Link to={to}>
         <p className="text-white hover:underline"> {text} </p>
       </Link>
