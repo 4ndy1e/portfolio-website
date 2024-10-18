@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
-import { BriefcaseBusinessIcon, UserIcon, WorkflowIcon } from "lucide-react";
+import { BriefcaseBusinessIcon, UserIcon } from "lucide-react";
 
 export default function Nav() {
   return (
