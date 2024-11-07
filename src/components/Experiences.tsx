@@ -9,21 +9,14 @@ function Experiences() {
       <BlurFade delay={0.5} inView>
         <Work
           name="Horizon Labs"
-          role="Software Developer Intern"
+          role="Software Engineer Intern"
           date="Sept 2024 - Jan 2025"
         />
       </BlurFade>
       <BlurFade delay={0.5} inView>
         <Work
-          name="Nexus DevOps"
-          role="Lead UI/UX Designer"
-          date="July 2024 - Oct 2024"
-        />
-      </BlurFade>
-      <BlurFade delay={0.5} inView>
-        <Work
           name="Activate"
-          role="Frontend Software Engineer"
+          role="Web Developer Intern"
           date="May 2024 - Aug 2024"
         />
       </BlurFade>
