@@ -14,7 +14,11 @@ function Experiences() {
         />
       </BlurFade>
       <BlurFade delay={0.5} inView>
-        <Work name="Acorns" role="Product Ambassador" date="Jan 2025 - Pres" />
+        <Work
+          name="Acorns"
+          role="Product Ambassador"
+          date="Jan 2025 - May 2025"
+        />
       </BlurFade>
       <BlurFade delay={0.5} inView>
         <Work
