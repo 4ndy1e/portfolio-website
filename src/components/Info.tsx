@@ -6,28 +6,35 @@ function Info() {
       <div className="border-black w-[50%] pr-24 max-lg:pr-16 max-lg:w-[60%] max-md:px-4 max-md:w-full">
         <BlurFade>
           <p className="aboutDesc">
-            I am currently a undergraduate student with a passion for
-            <strong> design and software development</strong>.
+            I am currently a undergraduate student with a passion for{" "}
+            <span className="text-black">design and software development</span>.
           </p>
         </BlurFade>
         <br></br>
         <BlurFade delay={0.5}>
           <p className="aboutDesc">
-            With both of these passions, I gained experience being a{" "}
-            <strong>UI/UX designer and web developer</strong>! I enjoy the
-            process of mapping all of my designs and ideas onto various design
-            interfaces and translating these designs into a website through
-            code. The process of troubleshooting, adjusting, and implementing
-            designs into scalable and usable applications is astounding to me.
+            Through my experiences, I’ve developed a strong foundation in web
+            development and application design.{" "}
+            <span className="text-black">
+              I enjoy the process of bringing ideas to life— translating
+              concepts into functional, scalable, and user-friendly applications
+              through code.
+            </span>{" "}
+            The journey of troubleshooting, refining, and implementing solutions
+            is both challenging and exhilarating, and it fuels my drive to
+            continuously improve.
           </p>
         </BlurFade>
         <br></br>
         <BlurFade delay={1}>
           <p className="aboutDesc">
-            The biggest reason why I am pursing a career in tech is because of
-            the evolving architecture. I love being able to constantly improve
-            and evolve day by day. There’s always so much do learn and do, with
-            endless opportunities to grow!
+            The biggest reason I’m pursuing a career in tech is because of its
+            ever-evolving nature. I’m inspired by the endless opportunities to
+            learn, grow, and innovate in this field.{" "}
+            <span className="text-black">
+              Every day presents a new challenge, and I love being able to
+              evolve alongside the technology I work with.
+            </span>
           </p>
         </BlurFade>
       </div>

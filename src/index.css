@@ -68,7 +68,7 @@ h5 {
 }
 
 .aboutDesc {
-  @apply leading-8 text-xl font-normal font-['Inter'] text-left max-md:text-xl max-[570px]:text-sm;
+  @apply text-[#b4b4b4] leading-8 text-xl font-normal font-['Inter'] text-left max-md:text-xl max-[570px]:text-sm;
 }
 
 .imgCaption {
