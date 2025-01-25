@@ -1,3 +1,5 @@
+import BlurFade from "./ui/blur-fade";
+
 function Hobbies() {
   return (
     <section className="flex max-[550px]:flex-col max-[550px]:gap-16 max-[550px]:px-4">
@@ -8,10 +10,18 @@ function Hobbies() {
             In my free time, I like to...{" "}
           </p>
           <br></br>
-          <p className="activities"> Travel </p>
-          <p className="activities"> Go to the gym </p>
-          <p className="activities"> Visit the art museum </p>
-          <p className="activities"> Watch cat videos </p>
+          <BlurFade inView>
+            <p className="activities"> Travel </p>
+          </BlurFade>
+          <BlurFade delay={0.25} inView>
+            <p className="activities"> Go to the gym </p>
+          </BlurFade>
+          <BlurFade delay={0.5} inView>
+            <p className="activities"> Visit the art museum </p>
+          </BlurFade>
+          <BlurFade delay={0.75} inView>
+            <p className="activities"> Watch cat videos </p>
+          </BlurFade>
         </div>
         <div>
           <p className="text-base font-normal font-['Inter'] text-[#b4b4b4] text-left">
@@ -19,7 +29,9 @@ function Hobbies() {
             and of course...{" "}
           </p>
           <br></br>
-          <p className="activities"> Design and develop :) </p>
+          <BlurFade delay={1} inView>
+            <p className="activities"> Design and develop :) </p>
+          </BlurFade>
         </div>
       </div>
       <Images />
