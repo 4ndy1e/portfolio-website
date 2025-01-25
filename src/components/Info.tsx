@@ -4,14 +4,14 @@ function Info() {
   return (
     <section className="flex items-center max-md:flex-col">
       <div className="border-black w-[50%] pr-24 max-lg:pr-16 max-lg:w-[60%] max-md:px-4 max-md:w-full">
-        <BlurFade>
+        <BlurFade inView>
           <p className="aboutDesc">
             I am currently a undergraduate student with a passion for{" "}
             <span className="text-black">design and software development</span>.
           </p>
         </BlurFade>
         <br></br>
-        <BlurFade delay={0.5}>
+        <BlurFade inView>
           <p className="aboutDesc">
             Through my experiences, I’ve developed a strong foundation in web
             development and application design.{" "}
@@ -26,7 +26,7 @@ function Info() {
           </p>
         </BlurFade>
         <br></br>
-        <BlurFade delay={1}>
+        <BlurFade inView>
           <p className="aboutDesc">
             The biggest reason I’m pursuing a career in tech is because of its
             ever-evolving nature. I’m inspired by the endless opportunities to

@@ -1,3 +1,5 @@
+import BlurFade from "./ui/blur-fade";
+
 function Education() {
   return (
     <section className="w-full flex flex-col gap-8 max-[550px]:px-4">
@@ -7,22 +9,24 @@ function Education() {
           className="rounded-3xl w-1/2 max-md:w-full"
         />
         <div className="w-1/2 px-8 max-md:w-full max-md:px-0">
-          <div className="mb-16 max-lg:mb-12">
-            <p className="text-2xl text-left font-bold max-md:text-center">
-              {" "}
-              Arizona State University
+          <BlurFade inView>
+            <div className="mb-16 max-lg:mb-12">
+              <p className="text-2xl text-left font-bold max-md:text-center">
+                {" "}
+                Arizona State University
+              </p>
+              <p className="text-left text-black text-sm font-bold font-['Inter'] max-md:text-center">
+                Ira A. Fulton Schools of Engineering
+              </p>
+            </div>
+            <p className="text-left text-[#b4b4b4] max-md:text-center">
+              I am currently an undergraduate student at ASU pursing a{" "}
+              <span className="text-black">
+                B.S. in Computer Science - Software Engineering
+              </span>{" "}
+              averaging a <span className="text-black">4.12 GPA</span>.
             </p>
-            <p className="text-left text-black text-sm font-bold font-['Inter'] max-md:text-center">
-              Ira A. Fulton Schools of Engineering
-            </p>
-          </div>
-          <p className="text-left text-[#b4b4b4] max-md:text-center">
-            I am currently an undergraduate student at ASU pursing a{" "}
-            <span className="text-black">
-              B.S. in Computer Science - Software Engineering
-            </span>{" "}
-            averaging a <span className="text-black">4.15 GPA</span>.
-          </p>
+          </BlurFade>
         </div>
       </div>
 
