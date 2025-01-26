@@ -8,7 +8,7 @@ import About from "./About";
 function App() {
   return (
     <Router>
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
