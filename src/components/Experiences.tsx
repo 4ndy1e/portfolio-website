@@ -8,7 +8,7 @@ function Experiences() {
       </h2>
       <BlurFade delay={0.5} inView>
         <Work
-          name="Shamrock"
+          name="Shamrock Foods Company"
           role="Software Engineer Intern"
           date="May 2025 - Aug 2025"
         />
