@@ -17,16 +17,23 @@ function Projects() {
 }
 
 function ProjectCards() {
-  const defaultImage = "calculator.png";
-  const mobileImage = "calculatorLogo.png";
-  const [image, setImage] = useState(defaultImage);
+  const defaultCalc = "calculator.png";
+  const mobileCalc = "calculatorLogo.png";
+  const defaultBulbasaur = "bulbasaur.png";
+  const mobileBulbasaur = "mobileBulbasaur.png";
+  const [calcImage, setCalcImage] = useState(defaultCalc);
+  const [bulbasaurImage, setBulbasaurImage] = useState(defaultBulbasaur);
 
   useEffect(() => {
     const handleImage = () => {
       if (window.innerWidth > 550) {
-        setImage(defaultImage); // non-mobile device image
+        // non-mobile device image
+        setCalcImage(defaultCalc);
+        setBulbasaurImage(defaultBulbasaur);
       } else {
-        setImage(mobileImage); // mobile devices image
+        // mobile devices image
+        setCalcImage(mobileCalc);
+        setBulbasaurImage(mobileBulbasaur);
       }
     };
 
@@ -41,6 +48,22 @@ function ProjectCards() {
 
   return (
     <section className="flex flex-col gap-8">
+      <div className="flex gap-8">
+        <BlurFade delay={0.5} inView className="w-full ">
+          <a href="https://voxel51.codestacx.com/" target="_blank">
+            <div className="flex flex-col">
+              <img
+                src={bulbasaurImage}
+                alt="bulbasaur"
+                className="rounded-[50px] hover:shadow-2xl max-[550px]:w-[250px] max-[550px]:aspect-square"
+                id="bulbasaur"
+              />
+              <h4> Bulbasaur</h4>
+              <p className="projDesc"> Wildfire Detection System </p>
+            </div>
+          </a>
+        </BlurFade>
+      </div>
       <div className="flex gap-8 max-[550px]:flex-col max-[550px]:items-center max-[550px]">
         <BlurFade
           delay={0.5}
@@ -125,7 +148,7 @@ function ProjectCards() {
           <a href="https://4ndy1e.github.io/calculator/" target="_blank">
             <div className="flex flex-col">
               <img
-                src={image}
+                src={calcImage}
                 alt="calc"
                 className="rounded-[50px] hover:shadow-2xl max-[550px]:w-[250px] max-[550px]:aspect-square"
                 id="calcImage"
