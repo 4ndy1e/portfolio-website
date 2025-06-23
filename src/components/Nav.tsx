@@ -5,7 +5,7 @@ import { BriefcaseBusinessIcon, UserIcon } from "lucide-react";
 
 export default function Nav() {
   return (
-    <section className="fixed top-0 left-0 w-full h-[57px] px-6 py-3 border-b border-[#606060] justify-between items-center flex bg-black z-[10] max-sm:h-[45px]">
+    <section className="fixed top-0 left-0 w-full h-[57px] px-6 py-3 border-b border-[#606060] justify-between items-center flex bg-black z-[1000] max-sm:h-[45px]">
       <div className="text-white text-base font-normal font-['Inter'] leading-snug">
         <img src="4L.png" className="h-[50px] apsect-square max-sm:h-[35px]" />
       </div>
