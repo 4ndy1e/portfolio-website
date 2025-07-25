@@ -1,6 +1,3 @@
-import Aurora from "@/blocks/Backgrounds/Aurora/Aurora";
-import Particles from "@/blocks/Backgrounds/Particles/Particles";
-
 function Lander() {
   return (
     <section className="relative flex flex-col items-center justify-center h-[100vh] mb-[400px]">
