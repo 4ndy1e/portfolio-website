@@ -40,8 +40,8 @@ function Home() {
       <Lander />
 
       <section className="flex flex-col mx-[15vw] max-sm:mx-[10vw] justify-center items-center">
-        <Projects />
         <Experiences />
+        <Projects />
         <Footer />
       </section>
     </section>

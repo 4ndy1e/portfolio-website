@@ -125,9 +125,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
       )}
     >
       {items.map((item, idx) => {
-        const isExternal = item.link.startsWith("http");
-
-        if (isExternal) {
+        if (item.link.startsWith("http")) {
           return (
             <a
               href={item.link}

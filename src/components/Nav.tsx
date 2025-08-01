@@ -25,6 +25,10 @@ export default function Nav() {
       name: "LinkedIn",
       link: "https://www.linkedin.com/in/4ndyle/",
     },
+    {
+      name: "GitHub",
+      link: "https://github.com/4ndy1e",
+    },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -59,7 +63,7 @@ export default function Nav() {
               className="rounded-full"
               href="mailto:4ndyle@gmail.com"
             >
-              Message Me
+              Contact Me
             </NavbarButton>
           </div>
         </NavBody>
@@ -99,7 +103,7 @@ export default function Nav() {
                 className="w-full rounded-full"
                 href="mailto:4ndyle@gmail.com"
               >
-                Message Me
+                Contact Me
               </NavbarButton>
             </div>
           </MobileNavMenu>
