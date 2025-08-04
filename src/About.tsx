@@ -4,6 +4,7 @@ import Education from "./components/Education";
 import Hobbies from "./components/Hobbies";
 import Footer from "./components/Footer.jsx";
 import { TypewriterEffect } from "./components/ui/type-writer.js";
+import Masonry from "./blocks/Components/Masonry/Masonry.js";
 
 function AboutPage() {
   const words = [
@@ -23,6 +24,48 @@ function AboutPage() {
         "text-[75px] text-black text-left max-md:text-center text-md:text-[60px] max-[570px]:text-[50px]",
     },
   ];
+
+  const photoGalleryTitle = [
+    {
+      text: "My",
+      className:
+        "text-[75px] text-black text-left max-md:text-center text-md:text-[60px] max-[570px]:text-[50px]",
+    },
+    {
+      text: "Photo",
+      className:
+        "text-[75px] text-black text-left max-md:text-center text-md:text-[60px] max-[570px]:text-[50px]",
+    },
+    {
+      text: "Gallery.",
+      className:
+        "text-[75px] text-black text-left max-md:text-center text-md:text-[60px] max-[570px]:text-[50px]",
+    },
+  ];
+
+  const items = [
+    {
+      id: "1",
+      img: "meSnow3.png",
+      height: 1000,
+    },
+    {
+      id: "6",
+      img: "boston.jpg",
+      height: 750,
+    },
+    {
+      id: "7",
+      img: "lilypads.jpg",
+      height: 600,
+    },
+    {
+      id: "8",
+      img: "vietnam.jpg",
+      height: 900,
+    },
+  ];
+
   return (
     <section className="flex flex-col mx-[5vw] max-sm:mx-[10vw] items-center mt-48 max-[570px]:mx-6 ">
       <Nav />
@@ -59,6 +102,24 @@ function AboutPage() {
         </p>
       </div>
       <Hobbies />
+      <div className="w-full m-24">
+        <p className="text-left border-t-2 text-[#b4b4b4] font-bold text-2xl">
+          Photography.
+        </p>
+      </div>
+      <div className="hidden md:block w-full h-fit mb-24 ">
+        <Masonry
+          items={items}
+          ease="power3.out"
+          duration={0.6}
+          stagger={0.05}
+          animateFrom="bottom"
+          scaleOnHover={true}
+          hoverScale={0.95}
+          blurToFocus={true}
+          colorShiftOnHover={false}
+        />
+      </div>
       <Footer />
     </section>
   );
