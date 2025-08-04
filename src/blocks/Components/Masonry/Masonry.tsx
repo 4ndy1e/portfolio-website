@@ -1,7 +1,3 @@
-/*
-	Installed from https://reactbits.dev/ts/tailwind/
-*/
-
 import React, {
   useCallback,
   useEffect,
@@ -159,7 +155,7 @@ const Masonry: React.FC<MasonryProps> = ({
   const { grid, containerHeight } = useMemo(() => {
     if (!width) return { grid: [], containerHeight: 0 };
     const colHeights = new Array(columns).fill(0);
-    const gap = 24; // Increased gap from 16 to 24 for better spacing
+    const gap = 32; // Increased gap from 16 to 24 for better spacing
     const totalGaps = (columns - 1) * gap;
     const columnWidth = (width - totalGaps) / columns;
 

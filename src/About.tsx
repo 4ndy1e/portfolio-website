@@ -25,24 +25,6 @@ function AboutPage() {
     },
   ];
 
-  const photoGalleryTitle = [
-    {
-      text: "My",
-      className:
-        "text-[75px] text-black text-left max-md:text-center text-md:text-[60px] max-[570px]:text-[50px]",
-    },
-    {
-      text: "Photo",
-      className:
-        "text-[75px] text-black text-left max-md:text-center text-md:text-[60px] max-[570px]:text-[50px]",
-    },
-    {
-      text: "Gallery.",
-      className:
-        "text-[75px] text-black text-left max-md:text-center text-md:text-[60px] max-[570px]:text-[50px]",
-    },
-  ];
-
   const items = [
     {
       id: "1",
@@ -56,7 +38,7 @@ function AboutPage() {
     },
     {
       id: "7",
-      img: "lilypads.jpg",
+      img: "flagstaff.jpeg",
       height: 600,
     },
     {
@@ -64,17 +46,51 @@ function AboutPage() {
       img: "vietnam.jpg",
       height: 900,
     },
+    {
+      id: "9",
+      img: "profile2.jpg",
+      height: 800,
+    },
+    {
+      id: "10",
+      img: "sky-flower.jpeg",
+      height: 650,
+    },
+    {
+      id: "11",
+      img: "river.jpeg",
+      height: 800,
+    },
+    {
+      id: "12",
+      img: "radio-city.jpeg",
+      height: 800,
+    },
+    {
+      id: "13",
+      img: "apple-wall.jpeg",
+      height: 900,
+    },
+    {
+      id: "14",
+      img: "nyc.jpeg",
+      height: 900,
+    },
+    {
+      id: "15",
+      img: "cali-temple.JPG",
+      height: 600,
+    },
+    {
+      id: "16",
+      img: "princeton.jpeg",
+      height: 500,
+    },
   ];
 
   return (
     <section className="flex flex-col mx-[5vw] max-sm:mx-[10vw] items-center mt-48 max-[570px]:mx-6 ">
       <Nav />
-      {/* <div className="w-full mb-48 max-[570px]:mb-24">
-        <h1 className="text-black text-left max-md:text-center text-md:text-[60px] max-[570px]:text-[50px]">
-          {" "}
-          Hi, I'm Andy...
-        </h1>
-      </div> */}
       <div className="flex w-full mb-48 max-[570px]:mb-24">
         <div className="text-black text-left max-md:text-center text-md:text-[60px] max-[570px]:text-[50px]">
           <TypewriterEffect
@@ -102,8 +118,8 @@ function AboutPage() {
         </p>
       </div>
       <Hobbies />
-      <div className="w-full m-24">
-        <p className="text-left border-t-2 text-[#b4b4b4] font-bold text-2xl">
+      <div className="w-full m-28">
+        <p className="text-right border-t-2 text-[#b4b4b4] font-bold text-2xl">
           Photography.
         </p>
       </div>
