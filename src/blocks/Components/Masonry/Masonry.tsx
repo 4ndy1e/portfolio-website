@@ -66,7 +66,6 @@ const preloadImages = async (urls: string[]): Promise<void> => {
 interface Item {
   id: string;
   img: string;
-  url: string;
   height: number;
 }
 
