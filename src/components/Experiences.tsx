@@ -8,6 +8,13 @@ function Experiences() {
       </h2>
       <BlurFade delay={0.5} inView>
         <Work
+          name="Google"
+          role="Grow with Google Scholar"
+          date="Aug 2025 - Present"
+        />
+      </BlurFade>
+      <BlurFade delay={0.5} inView>
+        <Work
           name="Shamrock Foods Company"
           role="Software Engineer Intern"
           date="May 2025 - Aug 2025"

@@ -27,7 +27,7 @@ export default function Nav() {
     },
     {
       name: "GitHub",
-      link: "https://github.com/4ndy1e",
+      link: "https://github.com/4ndyle",
     },
   ];
 
