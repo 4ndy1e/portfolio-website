@@ -1,3 +1,4 @@
+import BlurFade from "./components/ui/blur-fade.js";
 import Nav from "./components/Nav";
 import Info from "./components/Info.jsx";
 import Education from "./components/Education";
@@ -119,22 +120,24 @@ function AboutPage() {
       </div>
       <Hobbies />
       <div className="w-full m-28">
-        <p className="text-right border-t-2 text-[#b4b4b4] font-bold text-2xl">
+        <p className="hidden md:block w-full text-right border-t-2 text-[#b4b4b4] font-bold text-2xl">
           Photography.
         </p>
       </div>
       <div className="hidden md:block w-full h-fit mb-24 ">
-        <Masonry
-          items={items}
-          ease="power3.out"
-          duration={0.6}
-          stagger={0.05}
-          animateFrom="bottom"
-          scaleOnHover={true}
-          hoverScale={0.95}
-          blurToFocus={true}
-          colorShiftOnHover={false}
-        />
+        <BlurFade inView>
+          <Masonry
+            items={items}
+            ease="power3.out"
+            duration={0.6}
+            stagger={0.05}
+            animateFrom="bottom"
+            scaleOnHover={true}
+            hoverScale={0.95}
+            blurToFocus={true}
+            colorShiftOnHover={false}
+          />
+        </BlurFade>
       </div>
       <Footer />
     </section>
